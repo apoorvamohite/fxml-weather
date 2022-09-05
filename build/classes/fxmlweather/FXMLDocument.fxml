@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="492.0" prefWidth="765.0" style="-fx-background-image: url('file:C:/Users/kiran/Downloads/Downloads/3668-002.jpg');" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxmlweather.FXMLDocumentController">
+    <children>
+      <Button layoutY="86.0" mnemonicParsing="false" onAction="#handleButtonBom" prefHeight="85.0" prefWidth="92.0" style="-fx-background-color: #252526;" text="Mumbai" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutY="171.0" mnemonicParsing="false" onAction="#handleButtonLon" prefHeight="85.0" prefWidth="92.0" style="-fx-background-color: #363738;" text="London" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutY="1.0" mnemonicParsing="false" onAction="#handleButtonBlr" prefHeight="85.0" prefWidth="92.0" style="-fx-background-color: #100000;" text="Bangalore" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutY="256.0" mnemonicParsing="false" onAction="#handleButtonNyc" prefHeight="85.0" prefWidth="92.0" style="-fx-background-color: #4b4c4c;" text="New York" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutY="341.0" mnemonicParsing="false" onAction="#handleButtonSyd" prefHeight="85.0" prefWidth="92.0" style="-fx-background-color: #636363;" text="Sydney" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="currentImage" fitHeight="150.0" fitWidth="154.0" layoutX="126.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="currentTemp" layoutX="137.0" layoutY="233.0" prefHeight="46.0" prefWidth="69.0" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label fx:id="currentCondition" layoutX="139.0" layoutY="191.0" prefHeight="46.0" prefWidth="154.0" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <ImageView fx:id="loc" fitHeight="69.0" fitWidth="69.0" layoutX="609.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Pictures/location.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="currentLocation" layoutX="590.0" layoutY="103.0" prefHeight="46.0" prefWidth="163.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="currentDate" layoutX="590.0" layoutY="145.0" prefHeight="31.0" prefWidth="163.0" textAlignment="CENTER">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="322.0" layoutY="31.0" prefHeight="31.0" prefWidth="92.0" text="Humidity" textFill="WHITE" />
+      <Label layoutX="322.0" layoutY="108.0" prefHeight="31.0" prefWidth="92.0" text="Precipitation" textFill="WHITE" />
+      <Label layoutX="322.0" layoutY="182.0" prefHeight="31.0" prefWidth="92.0" text="Wind" textFill="WHITE" />
+      <Label fx:id="currentHumidity" layoutX="322.0" layoutY="67.0" prefHeight="31.0" prefWidth="45.0" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="currentPrecip" layoutX="322.0" layoutY="143.0" prefHeight="31.0" prefWidth="136.0" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="currentWind" layoutX="322.0" layoutY="218.0" prefHeight="31.0" prefWidth="356.0" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="d1Day" layoutX="140.0" layoutY="299.0" prefHeight="31.0" prefWidth="62.0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="d2Day" layoutX="230.0" layoutY="299.0" prefHeight="31.0" prefWidth="62.0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="d3Day" layoutX="320.0" layoutY="299.0" prefHeight="31.0" prefWidth="62.0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="d4Day" layoutX="410.0" layoutY="299.0" prefHeight="31.0" prefWidth="62.0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="d5Day" layoutX="500.0" layoutY="299.0" prefHeight="31.0" prefWidth="62.0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="d6Day" layoutX="590.0" layoutY="299.0" prefHeight="31.0" prefWidth="62.0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="d7Day" layoutX="680.0" layoutY="299.0" prefHeight="31.0" prefWidth="62.0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="d1Img" fitHeight="57.0" fitWidth="62.0" layoutX="120.0" layoutY="330.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="d2Img" fitHeight="57.0" fitWidth="62.0" layoutX="210.0" layoutY="330.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="d3Img" fitHeight="57.0" fitWidth="62.0" layoutX="306.0" layoutY="330.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="d4Img" fitHeight="57.0" fitWidth="62.0" layoutX="396.0" layoutY="330.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="d5Img" fitHeight="57.0" fitWidth="62.0" layoutX="486.0" layoutY="330.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="d6Img" fitHeight="57.0" fitWidth="62.0" layoutX="576.0" layoutY="330.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="d7Img" fitHeight="57.0" fitWidth="62.0" layoutX="666.0" layoutY="330.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="d1Temp" layoutX="140.0" layoutY="387.0" prefHeight="31.0" prefWidth="62.0" textAlignment="CENTER" textFill="WHITE" />
+      <Label fx:id="d2Temp" layoutX="230.0" layoutY="387.0" prefHeight="31.0" prefWidth="62.0" textAlignment="CENTER" textFill="WHITE" />
+      <Label fx:id="d3Temp" layoutX="320.0" layoutY="387.0" prefHeight="31.0" prefWidth="62.0" textAlignment="CENTER" textFill="WHITE" />
+      <Label fx:id="d4Temp" layoutX="410.0" layoutY="387.0" prefHeight="31.0" prefWidth="62.0" textAlignment="CENTER" textFill="WHITE" />
+      <Label fx:id="d5Temp" layoutX="500.0" layoutY="387.0" prefHeight="31.0" prefWidth="62.0" textAlignment="CENTER" textFill="WHITE" />
+      <Label fx:id="d6Temp" layoutX="590.0" layoutY="387.0" prefHeight="31.0" prefWidth="62.0" textAlignment="CENTER" textFill="WHITE" />
+      <Label fx:id="d7Temp" layoutX="680.0" layoutY="387.0" prefHeight="31.0" prefWidth="62.0" textAlignment="CENTER" textFill="WHITE" />
+      <Line endX="140.0" layoutX="400.0" layoutY="282.0" scaleX="2.5" scaleY="0.5" startX="-100.0" strokeWidth="0.25" />
+      <ComboBox fx:id="combo" layoutX="6.0" layoutY="441.0" prefHeight="38.0" prefWidth="173.0" promptText="Select City" style="-fx-background-color: white; -fx-background-radius: 0; -fx-border-color: black; -fx-border-width: 2; -fx-background-insets: 0;" />
+      <Button layoutX="199.0" layoutY="446.0" mnemonicParsing="false" onAction="#handleButtonCity" prefHeight="29.0" prefWidth="125.0" style="-fx-background-color: white;" text="Find My City" />
+      <Line endX="540.0" layoutX="210.0" layoutY="435.0" scaleY="0.9" startX="-200.0" strokeWidth="0.25" />
+    </children>
+</AnchorPane>
